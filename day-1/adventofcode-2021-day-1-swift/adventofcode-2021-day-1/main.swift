@@ -11,19 +11,27 @@ let content = try? String(contentsOfFile: "input.txt")
 
 var count = 0
 
-var previousMeasurement : Int32?
+var previousSum = 0
+var window = MeasurementWindow()
 for line in content!.split(whereSeparator: \.isNewline) {
-    let currentMeasurement = Int32(line)!
+    let currentMeasurement = Int(line)!
 
-    if previousMeasurement == nil {
-        previousMeasurement = currentMeasurement
+    window.addValue(newValue: currentMeasurement)
+    
+    print("window is now \(window.Values)")
+    
+    if (window.Values.count < 3) {
+        continue;
     }
-
-    if currentMeasurement > previousMeasurement! {
+    
+    let newSum = window.Values.reduce(0, +)
+    
+    if previousSum > 0 && newSum > previousSum {
+        print("previousSum was \(previousSum), newSum is \(newSum)")
         count += 1
     }
     
-    previousMeasurement = currentMeasurement
+    previousSum = newSum
 }
 
-print (count)
+print(count)

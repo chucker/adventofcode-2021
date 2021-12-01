@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F622B5F27582F1D000A0CEC /* MeasurementWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F622B5E27582F1D000A0CEC /* MeasurementWindow.swift */; };
 		5FC3DC0B275823CD00626A49 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3DC0A275823CD00626A49 /* main.swift */; };
 		5FC3DC13275827E200626A49 /* input.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5FC3DC11275825F300626A49 /* input.txt */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F622B5E27582F1D000A0CEC /* MeasurementWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementWindow.swift; sourceTree = "<group>"; };
 		5FC3DC07275823CD00626A49 /* adventofcode-2021-day-1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "adventofcode-2021-day-1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC3DC0A275823CD00626A49 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5FC3DC11275825F300626A49 /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				5FC3DC0A275823CD00626A49 /* main.swift */,
+				5F622B5E27582F1D000A0CEC /* MeasurementWindow.swift */,
 				5FC3DC11275825F300626A49 /* input.txt */,
 			);
 			path = "adventofcode-2021-day-1";
@@ -124,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F622B5F27582F1D000A0CEC /* MeasurementWindow.swift in Sources */,
 				5FC3DC0B275823CD00626A49 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
