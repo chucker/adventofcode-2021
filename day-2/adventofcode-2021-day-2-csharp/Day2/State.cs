@@ -1,4 +1,4 @@
 ﻿namespace Day2
 {
-    public record State(int Horizontal, int Depth);
+    public record State(int Horizontal, int Depth, int Aim);
 }

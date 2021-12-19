@@ -12,7 +12,7 @@ calculatePosition(filename: "test-input.txt")
 calculatePosition(filename: "input.txt")
 
 func calculatePosition(filename : String) {
-    var position = SubmarinePosition(Horizontal: 0, Depth: 0)
+    var position = SubmarinePosition(Horizontal: 0, Depth: 0, Aim: 0)
     
     let content = try? String(contentsOfFile: filename)
     
@@ -33,10 +33,11 @@ func calculatePosition(filename : String) {
         switch command {
             case "forward":
                 position.Horizontal += argument
+                position.Depth += position.Aim * argument
             case "up":
-                position.Depth -= argument
+                position.Aim -= argument
             case "down":
-                position.Depth += argument
+                position.Aim += argument
             default:
                 continue
         }

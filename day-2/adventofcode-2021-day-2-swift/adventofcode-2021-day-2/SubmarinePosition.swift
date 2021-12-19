@@ -10,4 +10,5 @@ import Foundation
 struct SubmarinePosition {
     var Horizontal: Int
     var Depth: Int
+    var Aim: Int
 }

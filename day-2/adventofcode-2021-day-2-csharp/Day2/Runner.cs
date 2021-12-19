@@ -35,19 +35,20 @@ namespace Day2
                 case "forward":
                     return state with
                     {
-                        Horizontal = state.Horizontal + argument
+                        Horizontal = state.Horizontal + argument,
+                        Depth = state.Depth + state.Aim * argument
                     };
 
                 case "down":
                     return state with
                     {
-                        Depth = state.Depth + argument
+                        Aim = state.Aim + argument
                     };
 
                 case "up":
                     return state with
                     {
-                        Depth = state.Depth - argument
+                        Aim = state.Aim - argument
                     };
 
                 default:

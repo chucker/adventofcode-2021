@@ -12,12 +12,12 @@ public class Tests
     {
         var runner = new Runner("test-input.txt");
 
-        var initialState = new State(0, 0);
+        var initialState = new State(0, 0, 0);
 
         var result = await runner.GetResultAsync(initialState);
 
         Assert.AreEqual(15, result.Horizontal);
-        Assert.AreEqual(10, result.Depth);
+        Assert.AreEqual(60, result.Depth);
 
         Console.WriteLine(result.Depth * result.Horizontal);
         throw new Exception();
